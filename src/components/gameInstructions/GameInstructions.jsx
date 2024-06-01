@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./GameInstructions.css";
+import Rules from "./Rules";
 
 export default function GameInstructions({ onStartGame }) {
   const [targetScore, setTargetScore] = useState(0);
@@ -20,24 +21,7 @@ export default function GameInstructions({ onStartGame }) {
     <div className="start">
       <div className="rules">
         <h2>Game Instructions</h2>
-        <ul>
-          <li>
-            In your turn - roll the dice (at least) and accumulate the result in
-            "current".
-          </li>
-          <li>
-            You can roll again or click "Hold" to save the points from "current"
-            and end the turn.
-          </li>
-          <li>
-            Note! If you get 6-6 - you will lose all points from "current" and
-            the turn will go to your opponent.
-          </li>
-          <li>
-            If you managed to reach exactly the target score - you win! If you
-            passed it - you lose ...
-          </li>
-        </ul>
+        <Rules />
       </div>
       <div className="get-num">
         <h2>Please select a target score</h2>
