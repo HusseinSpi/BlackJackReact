@@ -1,0 +1,22 @@
+.dice {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  position: absolute;
+  margin-top: 20px;
+  align-items: center;
+  z-index: 3;
+}
+
+.dice img {
+  width: 100px;
+}
+
+.dice button {
+  height: 40px;
+  width: 150px;
+  background-color: rgba(250, 235, 215, 0.9);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}

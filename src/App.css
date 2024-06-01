@@ -1,0 +1,42 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(to right bottom, #f2613f, #9b3922);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.shadow {
+  position: absolute;
+  height: 100vh;
+  width: 550px;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.textWin {
+  margin-top: 55%;
+}
+
+.scoreC {
+  color: #481e14;
+}
+
+#textWin2,
+#textWin1 {
+  color: #481e14;
+}
+
+button {
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(5px);
+}
